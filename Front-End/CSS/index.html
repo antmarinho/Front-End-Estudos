@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS</title>
+        <!--internal CSS-->
+        <style>
+            p {
+                color:  gold;
+                font-size: 40px;
+            }
+        </style>
+
+        <!--External CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/list.css">
+    </head>
+    <body>
+        <!--mudar cor com o css Inline-->
+        <h1 style="color: red;">Mudar a cor com o css inline</h1>
+        <!--nao mudou pq estar aplicado so no outro titulo-->
+        <h1>outro titulo</h1> 
+
+        <!--multiplas regras css -->
+        <h1 style="color: purple; font-size:  50px; border-bottom: 3px solid red;"> mudar a cor e tamanho fonte</h1>
+
+        <!--Internal CSS-->
+        <p>eu fui estilizado pelo internal</p>
+        <p>mais um</p>
+        <p>e mais outro</p>
+
+        <!--External CSS-->
+        <h3>meu titulo verde</h3>
+
+        <!--odem do CSS inline > internal = external -->
+        <p style=" color: red;">Ordem do css</p>
+        <p>ordem do css 2</p>
+
+        <!--multiplos CSS-->
+        <ul>
+            <li>banana</li>
+            <li>maca</li>
+            <li>abacate</li>
+        </ul>
+    </body>
+</html>
