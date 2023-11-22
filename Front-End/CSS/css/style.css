@@ -8,7 +8,7 @@ h3{
 }
 
 p{
-    color: blueviolet;
+    /*color: blueviolet;*/
 }
 
 /*classes*/
@@ -84,4 +84,48 @@ h2{
 
 .hsl2{
     color: hsl(214, 35%, 70%);
+}
+
+.bg{
+    background-color: #000;
+    color: yellow;
+}
+
+.bg2{
+    background-color: #894856;
+    color: blue;
+}
+
+.bgop{
+    background-color: green;
+    opacity: 0.5;
+}
+
+.bgop2{
+    background-color: gray;
+    color: #000;
+    opacity: 0.8;
+}
+
+.rgbaop{
+    background-color: rgba(90, 120, 20, 0.2);
+    color: #000;
+}
+
+.bgimg{
+    background-image: url("../img/floresta.jpg");
+    padding: 10px;
+    color: #fff;
+}
+
+.notc,
+.c{
+    height: 400px;
+    width: 400px;
+    background-image: url(../img/recife.jpg);
+}
+
+.c{
+    background-position: center;
+    background-size: cover;
 }
