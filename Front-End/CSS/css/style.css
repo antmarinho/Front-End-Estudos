@@ -129,3 +129,127 @@ h2{
     background-position: center;
     background-size: cover;
 }
+
+.altlar{
+    height: 200px; /*altura*/
+    width: 100px; /*largura*/
+    background-color: red;
+}
+
+.altlar2{
+    height: 300px; /*largura vai ocupar tudo pq n definiu*/
+    background-color: #000;
+}
+
+.sem-padding{
+    background-color: red;
+    color: #fff;
+}
+
+.com-padding{
+    background-color: #888;
+    color: #fff;
+    padding: 20px;
+}
+
+.padding-in{
+    background-color: #555;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.sp{
+    background-color: #444;
+    padding: 6px 12px 18px 24px; /*cima direito baixo esquerda*/
+}
+
+.sp2{
+    background-color: #555;
+    padding: 10px 20px;
+    /*e igual paddding: 10px 20px 10px 20px*/
+}
+
+.sem-border-box{ /*aqui sem borderbox ta somando 400px + 50 de um lado do padding e + 50 do outro*/
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{ /*aqui o total e 400px com os 100 dos padding*/
+    background-color: #888;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.borda{
+    border: 5px solid red; /*tamanho e o tipo da borda*/
+    padding: 10px;
+}
+
+.borda2{
+    border: 10px dotted #489;
+    padding: 15px;
+}
+
+.bordae{
+    border-left: 8px solid green;
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+}
+
+.bordab{
+    border-bottom: 8px double #587;
+    background-color: #222;
+    padding: 20px;
+    color: #fff;
+}
+
+.arredondar{
+    border: 8px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.arredondar2{
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.margem{
+    margin: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+.margem2{
+    margin-top: 10px;
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+}
+
+.margem3{
+    background-color: #666;
+    color: #fff;
+    margin: 5px 10px 15px 20px; /*cima direita baixo esquerda*/
+}
+
+.box{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #845;
+    border-radius: 5px;
+    width: 200px;
+    height: 400px; 
+}
