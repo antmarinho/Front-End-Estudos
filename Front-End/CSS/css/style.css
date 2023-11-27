@@ -253,3 +253,29 @@ h2{
     width: 200px;
     height: 400px; 
 }
+
+.alin{
+
+    text-align: right;
+}
+
+.center{
+
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.risco{
+    text-decoration: line-through;
+}
+
+.semunder{
+    text-decoration: none;
+    color: red;
+}
+
