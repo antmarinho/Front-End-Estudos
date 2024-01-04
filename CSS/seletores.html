@@ -6,7 +6,69 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /*universal o (*)
+        * {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+       /* .tag { /*classe tag*/ /*
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+       /* #aprovados { /*so no ID*/ /*
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+        /*#aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+        /*#aninhado section{
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+        /*p + ul {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        p ~ ol {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+        /*atributo com valor determinado
+        [feira=casa] {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+        /*atributo
+        [feira] {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+        /*section > :nth-child(even) {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+        /*aplicar em mais de 1
+        section, ul {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+
+      /*segundo elemento do tipo span na section*/
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
