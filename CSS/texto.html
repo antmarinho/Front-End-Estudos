@@ -6,7 +6,7 @@
     <title>Texto</title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <style>
-        /* ... */
+       
         * {
             margin: 0;
         }
@@ -15,6 +15,60 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        div {
+            font-size: 50px;
+        }
+
+        p {
+            /*valores padroes equivalentes*/
+            font-size: 1em;
+            font-size: 100%;
+            font-size: 16px;
+            font-size: 12pt;
+
+            /*unidades absolutas*/
+            font-size: 100px;
+            font-size: 72pt; /*pontos*/
+            font-size: 1in; /*polegadas*/
+
+            /*unidade relativas*/
+            font-size: 2.2em;
+            font-size: 2.2rem;
+            font-size: 50vh;
+            font-size: 10vw;
+
+            font-family: monospace; /*o tipo da fonte*/
+            font-family: Georgia, serif;
+            font-family: Indie Flower, cursive;
+
+            font-weight: bolder; /*negrito*/
+            font-style: italic; /*italico*/
+            text-transform: uppercase;
+            text-decoration: line-through; /*decoracao se tem linha em baixo riscado etc*/
+            word-spacing: 20px; /*espaco entre as palavras*/
+            letter-spacing: 20px;  /*espaco entre as letras*/
+            line-height: 2.2em; /*altura entre as linhas*/
+            text-align: center; /*alinhamento do texto*/
+
+        }
+
+        .botao {
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        .destaque{
+            color: #fff;
+            background-color: tomato;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+
+        .destaque:active { /*o active quando clicar*/
+            box-shadow: none;
         }
     </style>
 </head>
