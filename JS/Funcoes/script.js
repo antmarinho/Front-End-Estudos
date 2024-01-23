@@ -208,3 +208,84 @@ function fatorial(x) {
 const result = fatorial(6);
 
 console.log(result);
+
+// filter 
+
+const arr = [1,2,3,4,5,6];
+
+const highNumbers = arr.filter((n) => {
+    if(n > 3) {
+        return n;
+    }
+});
+
+console.log(highNumbers);
+
+const users = [
+    {name: "mateus", available: true},
+    {name: "jose", available: false},
+    {name: "maria", available: true},
+    {name: "joao", available: true},
+    {name: "ana", available: false},
+];
+
+const availableUsers = users.filter((user) => user.available);
+
+console.log(availableUsers);
+
+// MAP
+
+const products = [
+    {name:'camisa', price: 10.5, category : 'roupas'},
+    {name:'geladeira', price: 1000.5, category : 'eletro'},
+    {name:'fogao', price: 100.5, category : 'eletro'},
+    {name:'calca jeans', price: 50.5, category : 'roupas'},
+]
+
+products.map((product) => {
+    if(product.category === 'roupas') {
+        product.onSale = true;
+    }
+});
+
+console.log(products);
+
+// destructuring
+
+const fruits = ['maca','mamao','laranja'];
+
+const [f1,f2,f3] = fruits;
+
+console.log(f1,f3);
+
+const productDetails = {
+    name: 'mouse',
+    price: 30,
+    category: 'periferico',
+    color: 'cinza',
+};
+
+const {name: productName, price, category, color} = productDetails;
+
+console.log(`o nome do produto e ${productName}`);
+
+// spread operator serve pra juntar
+
+const a1 = [1,2,3];
+const a2 = [3,5,6];
+
+const a3 = [...a1, ...a2];
+
+console.log(a3);
+
+const a4 = [0, ...a3, 7];
+
+console.log(a4);
+
+const carName = {name: 'gol'};
+const carBrand = {brand: 'vw'};
+const otherInfos = {km: 10000, price: 450000};
+
+const car = {...carName, ...carBrand, ...otherInfos};
+
+console.log(car);
