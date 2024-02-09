@@ -12,7 +12,16 @@
         <p>Texto Inicial</p>
     </div>
     <script>
-        // ...
+        const div = document.querySelector("div");
+        div.innerHTML = "texto alterado";
+        //div.outerHTML = "texto alterado"; //aqui ele substitui a div toda por esse texto
+        div.insertAdjacentHTML("beforebegin", "<p>antes do inicio</p>"); //adiciona antes da div selecionada
+        div.insertAdjacentHTML("afterbegin", "<p>depois do inicio</p>"); //adiciona depois da div selecionada
+        div.insertAdjacentHTML("beforeend", "<p>antes fim</p>"); //adiciona antes do fim da div selecionada
+        div.insertAdjacentHTML("afterend", "<p>depois do fim</p>"); //adiciona depois do fim da div selecionada
+
+        console.log(div.innerHTML); //vem o q tem dentro da div
+        console.log(div.innerText); //so vem o texto dentro da div
     </script>
 </body>
 

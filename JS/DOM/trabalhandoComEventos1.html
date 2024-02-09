@@ -8,10 +8,22 @@
 </head>
 
 <body class="conteudo exercicio">
-    <div>
+    <div> 
+        <!-- onclick="navegarEm5s(event)" -->
         <a href="https://google.com.br">Google</a>
     </div>
     <script>
-        // ...
+        function navegarEm5s(e) {
+            e.preventDefault();
+
+            setTimeout(() => {
+                window.location.href = e.target.href;
+            },5000);
+        }
+
+        const a = document.querySelector("a");
+        //a.onclick = navegarEm5s;
+
+        a.addEventListener("click", navegarEm5s);
     </script>
 </body>
