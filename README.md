@@ -3,3 +3,4 @@
 - HTML
 - CSS
 - JavaScript
+- Ajax
