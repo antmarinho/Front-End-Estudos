@@ -14,6 +14,23 @@
     <div id="post"></div>
 
     <script>
-        // ...
+        function exibirResultado(id,dados) {
+            const texto = JSON.stringify(dados);
+            document.getElementById(id).innerHTML = texto;
+        }
+
+        axios.get('parOuImpar', {
+            params: {
+                numero: 6
+            }
+        }).then(resp => exibirResultado('get',resp.data));
+
+        //axios('parOuImpar?numero=10').then(resp => exibirResultado('get',resp.data));
+
+        axios.post('formulario', {
+            nome: 'joao',
+            sobrenome: 'silva'
+        }).then(resp => exibirResultado('post',resp.data));
+        
     </script>
 </body>
