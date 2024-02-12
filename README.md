@@ -4,4 +4,4 @@
 - CSS
 - JavaScript
 - Ajax
-- Reacj.js
+- React.js
