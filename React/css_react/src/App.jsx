@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className="clas">
+      <div className="App">
         {/*css global */}
         <h1>css no react</h1>
         {/*css componentes */}
