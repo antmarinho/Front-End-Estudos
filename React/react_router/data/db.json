@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "id": 5,
+      "name": "capa de chuva",
+      "price": "50.50"
+    },
+    {
+      "id": 6,
+      "name": "teclado",
+      "price": "110"
+    },
+    {
+      "id": 7,
+      "name": "cadeira",
+      "price": "200"
+    },
+    {
+      "id": 8,
+      "name": "tttt",
+      "price": "88"
+    },
+    {
+      "id": 9,
+      "name": "ttttdd",
+      "price": "88"
+    },
+    {
+      "id": 10,
+      "name": "ttttdd",
+      "price": "88"
+    },
+    {
+      "id": 11,
+      "name": "ttttdd",
+      "price": "88"
+    },
+    {
+      "id": 12,
+      "name": "teste",
+      "price": "33"
+    },
+    {
+      "id": 13,
+      "name": "gbh",
+      "price": "6"
+    },
+    {
+      "id": 14,
+      "name": "gbh",
+      "price": "6"
+    },
+    {
+      "id": 15,
+      "name": "gbh",
+      "price": "6"
+    },
+    {
+      "id": 16,
+      "name": "gbhr",
+      "price": "63"
+    },
+    {
+      "id": 17,
+      "name": "gbhr",
+      "price": "63"
+    }
+  ]
+}
