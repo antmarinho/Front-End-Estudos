@@ -1,0 +1,24 @@
+#welcome {
+    text-align: center;
+    max-height: 500px;
+}
+
+#welcome h2,
+#welcome p {
+    margin-bottom: 1rem;
+}
+
+#welcome p {
+    color: #8435de;
+}
+
+#welcome img {
+    margin-top: 2rem;
+    height: 450px;
+}
+
+#welcome button {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
