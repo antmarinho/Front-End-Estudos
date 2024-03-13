@@ -1,0 +1,107 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "algum servico 3",
+    "description": "alguma descricao 3",
+    "price": 150,
+    "image": "http://"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/65f1eea16774cce01b975d95
+
+###
+
+DELETE http://localhost:3000/api/services/65f1eea16774cce01b975d95
+
+###
+
+PUT http://localhost:3000/api/services/65f1f09810311f92bfc77af1
+Content-Type: application/json
+
+{
+    "name": "ATUALIZACAO",
+    "description": "alguma descricao 3",
+    "price": 15000,
+    "image": "http://"
+}
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "meu evento 2",
+    "author": "jose",
+    "description": "festa aniversario",
+    "budget": 150,
+    "image": "http://",
+    "services": [
+
+        {
+            "name": "algum servico 1",
+            "description": "alguma descricao 1",
+            "price": 15,
+            "image": "http://"
+        },
+
+        {
+            "name": "algum servico 3",
+            "description": "alguma descricao 3",
+            "price": 10,
+            "image": "http://"
+        }
+
+    ]
+
+}
+
+###
+
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/65f20d7635b9fef76aaa97fe
+
+###
+
+DELETE http://localhost:3000/api/parties/65f20d7635b9fef76aaa97fe
+
+###
+
+PUT http://localhost:3000/api/parties/65f20dfd35b9fef76aaa9800
+Content-Type: application/json
+
+{
+    "title": "meu evento 2",
+    "author": "jose",
+    "description": "festa aniversario",
+    "budget": 1500,
+    "image": "http://",
+    "services": [
+
+        {
+            "name": "algum servico 1",
+            "description": "alguma descricao 1",
+            "price": 152,
+            "image": "http://"
+        },
+
+        {
+            "name": "algum servico 3",
+            "description": "alguma descricao 3",
+            "price": 105,
+            "image": "http://"
+        }
+
+    ]
+
+}
