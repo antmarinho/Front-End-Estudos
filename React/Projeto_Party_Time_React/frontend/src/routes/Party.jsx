@@ -42,7 +42,7 @@ const Party = () => {
     <div className='party'>
         <h1>{party.title}</h1>
         <div className="actions-container">
-          <Link className='btn'>Editar</Link>  
+          <Link to={`/party/edit/${party._id}`} className='btn'>Editar</Link>  
           <button onClick={handleDelete} className='btn-secondary'>Excluir</button>
         </div>
         <p>Orcamento: R${party.budget}</p>
