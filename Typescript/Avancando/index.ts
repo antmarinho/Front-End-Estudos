@@ -121,3 +121,91 @@ function showUserRole(role: boolean | string) {
 
 console.log(showUserRole(false))
 console.log(showUserRole('admin'))
+
+// type alias 
+
+type ID = string | number
+
+function showId(id: ID) {
+    console.log(`o id e ${id}`)
+}
+
+showId(1)
+showId('200')
+
+// interface
+
+interface Point {
+    x: number
+    y: number
+    z: number
+}
+
+function showCoords(obj: Point) {
+    console.log(`x ${obj.x} y ${obj.y} z ${obj.z}`)
+}
+
+const coordObj: Point = {
+    x: 2,
+    y: 4,
+    z: 34
+}
+
+showCoords(coordObj)
+
+// interface x type alias
+
+interface Person {
+    name: string
+}
+
+interface Person {
+    age: number
+}
+
+const somePerson: Person = {name: "jose", age: 33}
+
+//type personType = {       type e uma constante n pode ser modificado
+ //   age: number
+//}
+
+
+// literal types
+
+let test: 'testando'
+
+test = 'testando'
+
+console.log(test)
+
+function showDirection(direction: 'left' | 'right' | 'center') {
+    console.log(`a direcao e ${direction}`)
+}
+
+showDirection('left')
+//showDirection('top')
+
+
+// not null assertion operators
+
+const p = document.getElementById("some-p")
+
+console.log(p!.innerText)
+
+// bigint
+
+let n: bigint
+
+//n = 1
+
+n = 1000n
+
+console.log(typeof n)
+
+// symbol
+
+let symbolA: symbol = Symbol("a")
+let symbolB = Symbol("a")
+
+console.log(symbolA == symbolB)
+console.log(symbolA === symbolB)
